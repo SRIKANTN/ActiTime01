@@ -1,0 +1,26 @@
+<suite name="Suite" parallel="tests">
+  <test  name="ChromeTest">
+      <parameter name="nodeurl" value="http://192.168.71.1:4444/wd/hub/"/>
+      <parameter name="browser" value="chrome"/>
+      <parameter name="appurl" value="https://demo.actitime.com"/>
+    <packages>
+      <package name="com_ActiTime_Tests"/>
+    </packages>
+  </test> 
+  <test  name="FirefoxTest">
+      <parameter name="nodeurl" value="http://192.168.71.1:4444/wd/hub/"/>
+      <parameter name="browser" value="firefox"/>
+      <parameter name="appurl" value="https://demo.actitime.com"/>
+    <packages>
+      <package name="com_ActiTime_Tests"/>
+    </packages>
+  </test> 
+  <test  name="IETest">
+      <parameter name="nodeurl" value="http://192.168.71.1:4444/wd/hub/"/>
+      <parameter name="browser" value="internet explorer"/>
+      <parameter name="appurl" value="https://demo.actitime.com"/>
+    <packages>
+      <package name="com_ActiTime_Tests"/>
+    </packages>
+  </test> 
+</suite> 
