@@ -1,5 +1,6 @@
 package com_ActiTime_Tests;
 
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -19,11 +20,9 @@ public class VerifyversionTest extends BaseTest
 		//verify login page title
 		lp.verifyTitle(title);
 		String aversion = lp.verifyVersion();
-		SoftAssert sa = new SoftAssert();
 		//verifying version of application
-		sa.assertEquals(aversion, eversion);
+		Assert.assertEquals(aversion, eversion);
 		Reporter.log("version "+aversion,true);
-		sa.assertAll();
 	}
 
 }
